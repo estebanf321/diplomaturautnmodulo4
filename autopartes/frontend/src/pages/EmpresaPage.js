@@ -18,10 +18,9 @@ const EmpresaPage = (props) => {
                 </p>
                 <p> Estamos inscriptos en el <b>RUDAC</b> ( Registro Unico de Desarmadero y Actividades Conexas )
                     dependiente de la
-                    DNRPA ( Dirección Nacional de Registro de la Propiedad Automotor ) para el desarmado de automotores
-                    dados de baja y la comercialización de sus partes. También estamos habilitados por la Municipalidad de
-                    Rosario y la Secretaría de Estado de Medio Ambiente y Desarrollo Sustentable de la Provincia de Santa Fe
-                    .</p>
+                    DNRPA ( Dirección Nacional de Registro de la Propiedad Automotor ) para la comercialización de partes de automotores
+                    dados de baja. También estamos habilitados por la Municipalidad de
+                    Rosario.</p>
             </div>
             <div className="empresaimg">
                 <img src="images/empresa/empresa.jpg" alt="Empresa" />
