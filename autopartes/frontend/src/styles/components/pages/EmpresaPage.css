@@ -14,3 +14,9 @@
 .ubicacion p{
     font-size: 0.8em;
 }
+
+.ubicacion iframe{
+    width: 600px;
+    height: 400px;
+    border: 0;
+} 

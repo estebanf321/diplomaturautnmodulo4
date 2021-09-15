@@ -27,9 +27,14 @@ const EmpresaPage = (props) => {
             </div>
             <div className="ubicacion">
                 <h2>Ubicación</h2>
-                {/* <iframe
+                {/* codigo en el html: <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.7155435340005!2d-60.721160584813994!3d-32.932112980925474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65327ce690cdd%3A0x50effbf44595cdb!2sAv.%20Eva%20Per%C3%B3n%207201%2C%20S2008BSD%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1629436003476!5m2!1ses!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> */}
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.7155435340005!2d-60.721160584813994!3d-32.932112980925474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65327ce690cdd%3A0x50effbf44595cdb!2sAv.%20Eva%20Per%C3%B3n%207201%2C%20S2008BSD%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1629436003476!5m2!1ses!2sar"
+                    title="maps" > </iframe>
+
+
                 <p> Nuestra "CASA CENTRAL"se encuentra en: <b> Av. Eva Perón Nº 7201 </b>- ( Esquina México).
                 </p>
             </div>
