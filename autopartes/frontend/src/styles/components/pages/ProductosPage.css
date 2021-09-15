@@ -1,0 +1,40 @@
+.portadaimg{
+    margin-bottom: 0.2em; 
+}
+
+.portadaimg h2{
+    margin-bottom: 0; 
+}
+
+.portadaimg img{
+ /* max-width: 100%; */
+ width: 960px;
+ height: 200px;
+}
+
+.galeria .foto{
+    display: inline-block;
+    /* float: left; */
+    width: 30%;
+    height: 30%;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+}
+
+.galeria .foto img{
+    width: 100%;
+    display: block;
+    align-content: center;
+}
+/* 
+.galeria .foto:nth-child(3n+1){
+    margin-left: 0;
+    border-color: blue;
+} */
+
+.galeria .foto:hover{
+    border-color: black;
+    background-color: gray;
+}

@@ -1,0 +1,16 @@
+.historia p{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.empresaimg{
+    margin-bottom: 1.5em;
+}
+
+.empresaimg img{
+ max-width: 100%;
+}
+
+.ubicacion p{
+    font-size: 0.8em;
+}
