@@ -10,15 +10,15 @@ const ContactoPage = (props) => {
                 <form action="" method="" className="formulario">
                     <p>
                         <label for="">Nombre</label>
-                        <input type="text" name="nombre"/>
+                        <input type="text" name="nombre" required/>
                     </p>
                     <p>
                         <label for="">Email</label>
-                        <input type="email" name="email"/>
+                        <input type="email" name="email" required/>
                     </p>
                     <p>
                         <label for="">Teléfono</label>
-                        <input type="text" name="telefono"/>
+                        <input type="text" name="telefono" required/>
                     </p>
 
                     <p>
