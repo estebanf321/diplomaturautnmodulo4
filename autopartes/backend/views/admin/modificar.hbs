@@ -1,0 +1,39 @@
+<div class="container" style="margin: 100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4> Modificar una Oferta</h4>
+            <form action="/admin/novedades/modificar" method="post">
+
+                <input type="hidden" value="{{oferta.id_oferta}}" name="id_oferta">
+                <label for="">Id producto</label>
+                <div class="form-group">
+                    <input type="number" class="form-control" value="{{oferta.id_producto}}" name="id_producto"
+                        required>
+                </div>
+                <label for="">Precio oferta</label>
+                <div class="form-group">
+                    <input type="number" class="form-control" value="{{oferta.precio_oferta}}" name="precio_oferta"
+                        required>
+                </div>
+                <label for="">Cantidad mínima</label>
+                <div class="form-group">
+                    <input type="number" class="form-control" value="{{oferta.cant_min}}" name="cant_min" required>
+                </div>
+                <label for="">Observaciones</label>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" name="observaciones" required> {{oferta.observaciones}}
+                        </textarea>
+                </div>
+                <label for="">Vigencia</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" value="{{oferta.vigencia}}" name="vigencia" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
