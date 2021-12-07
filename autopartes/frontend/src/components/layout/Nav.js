@@ -9,12 +9,12 @@ const Nav = (props) =>{
         <nav>
         <div className="holder">
             <ul>
-                <li><NavLink activeClassName="activo" exact to="/">Home</NavLink></li>
-                <li><NavLink activeClassName="activo" exact to="/empresa">Empresa</NavLink></li>
-                <li><NavLink activeClassName="activo" exact to="/servicios">Servicios</NavLink></li>
-                <li><NavLink activeClassName="activo" exact to="/productos">Productos</NavLink></li>
-                <li><NavLink activeClassName="activo" exact to="/novedades">Novedades</NavLink></li>
-                <li><NavLink activeClassName="activo" exact to="/contacto">Contacto</NavLink></li>
+                <li><NavLink activeClassName="activo" exact to="/"><i class="fas fa-laptop-house"></i>Home</NavLink></li>
+                <li><NavLink activeClassName="activo" exact to="/empresa"><i class="fas fa-building"></i>Empresa</NavLink></li>
+                <li><NavLink activeClassName="activo" exact to="/servicios"><i class="fab fa-usps"></i>Servicios</NavLink></li>
+                <li><NavLink activeClassName="activo" exact to="/productos"><i class="fas fa-car"></i>Productos</NavLink></li>
+                <li><NavLink activeClassName="activo" exact to="/novedades"><i class="fas fa-newspaper"></i>Novedades</NavLink></li>
+                <li><NavLink activeClassName="activo" exact to="/contacto"><i class="fas fa-mail-bulk"></i>Contacto</NavLink></li>
             </ul>
 
         </div>

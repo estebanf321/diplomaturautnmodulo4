@@ -71,12 +71,12 @@ const ContactoPage = (props) => {
                 <h2>Otras vías de contacto</h2>
                 <p>Tambien se pueden comunicar con nosotros ....</p>
                 <ul>
-                    <li>Teléfono: 341-4564762 / 341-4571443</li>
-                    <li>Wsp: 3413507313</li>
-                    <li>Email: ventas@desarmaderoar.com.ar</li>
-                    <li>Facebook: autopartesrosario</li>
-                    <li>Instagram: @autopartesrosario</li>
-                </ul>
+                <li> <i class="fas fa-phone-alt"></i> Teléfono: 341-4564762 / 341-4571443</li>
+                <li> <i class="fab fa-whatsapp"></i> WhatsApp: +3413507313</li>
+                <li> <i class="fas fa-at"></i> E-mail: <a target="_blanck" href="mailto:ventas@desarmaderoar.com.ar?subject=CONTACTO"> ventas@desarmaderoar.com.ar</a></li>
+                <li> <i class="fab fa-facebook-square"></i> Facebook:<a target="_blanck" href="https://www.facebook.com/autoparterosario"> autoparterosario</a></li>
+                <li> <i class="fab fa-instagram"></i> Instagram:<a target="_blanck" href="https://www.instagram.com/autopartesrosario/?hl=es"> @autopartesrosario </a></li>
+            </ul>
 
             </div>
         </main>

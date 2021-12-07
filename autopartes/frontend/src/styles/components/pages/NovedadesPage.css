@@ -1,3 +1,51 @@
 .novedades{
     text-align: center;
+
 }
+
+/* inicio novedad*/
+
+
+
+.demo .novedad  {
+    list-style-type: none;
+    float: left;
+}
+
+.novedad {
+    width: 240px;
+    padding:2em 1em 1em 1em;               
+    text-align: center;    
+    transition: all 3s ease;      
+}
+
+.novedad img {
+    margin:auto;
+    display:block;  
+    transform: scale(0.9);
+    transition: all 2s ease; 
+}
+
+
+.novedad:hover {
+    background-color: rgba(134, 134, 134, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.novedad:hover img {
+transform: scale(1);     
+}  
+
+.novedad:hover h2 {
+    color:#3336c9;
+    font-weight: bold;   
+}
+
+.novedad:hover p {
+    font-weight: bold;   
+}
+
+/* fin novedad*/
+
+

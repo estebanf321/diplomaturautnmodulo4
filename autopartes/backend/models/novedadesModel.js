@@ -1,7 +1,7 @@
 var pool =require('./db');
 
 async function getNovedades(){
-    var query = 'SELECT ofertas.id_oferta, productos.descrip_prod, ofertas.precio_oferta, ofertas.cant_min,  ofertas.img_id FROM ofertas INNER JOIN productos ON ofertas.id_producto = productos.id_producto';
+    var query = 'SELECT ofertas.id_oferta, productos.descrip_prod, ofertas.precio_oferta, ofertas.cant_min,  ofertas.img_id FROM ofertas INNER JOIN productos ON ofertas.id_producto = productos.id_producto ORDER BY ofertas.id_oferta';
     var rows = await pool.query(query);
     return rows;
 

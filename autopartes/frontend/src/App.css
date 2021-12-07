@@ -9,6 +9,10 @@ body{
   margin: 0 auto;
 }
 
+.holder h1{
+  text-align: center;
+}
+
 h2{
   color: rgb(32, 32, 145);
   font-weight: 400;
