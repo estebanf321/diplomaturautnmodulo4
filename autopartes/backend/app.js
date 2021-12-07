@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileUpload = require('express-fileupload');// para cargar archivos de imagenes l sitio<<
+var cors = require('cors'); //para crear api rest
+
 
 //el dotenv y *session tienen que estar antes que la declaracion de variables
 require('dotenv').config();
@@ -13,6 +16,8 @@ var usersRouter = require('./routes/users');
 
 var loginRouter = require('./routes/admin/login');//login
 var adminRouter = require('./routes/admin/novedades'); //Novedades
+
+var apiRouter = require('./routes/api');// api rest
 
 var app = express();
 
@@ -36,7 +41,7 @@ app.use(session({
 
 secured = async (req, res, next) => {
   try {
-   // console.log(req.session.id_usuario);
+    // console.log(req.session.id_usuario);
     if (req.session.id_usuario) {
       next();
     } else {
@@ -46,13 +51,23 @@ secured = async (req, res, next) => {
     console.log(error);
   }
 };
+//* cierro session
+
+//* ponemos paquete de var tamporal para subir imagenes
+
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+//*cierro var temporal
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
-//app.use('/novedades',secured,novedadesRouter);
+
+app.use('/api',cors(),apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,15 +1,41 @@
-import React from 'react';
+
+import {useState, useEffect} from 'react';
+import axios from 'axios';
+import OfertaItem from '../components/novedades/NovedadItem';
+
 import '../styles/components/pages/NovedadesPage.css';
 
-const NovedadesPage = (props) => {
+const Nav = (props) => {
+
+    const [loading, setLoading]=useState(false);
+    const[novedades,setNovedades]=useState([]);
+
+    useEffect(()=> {
+        const cargarNovedades=async()=>{
+            setLoading(true);
+            const response =await axios.get('http://localhost:3000/api/novedades')
+            ;
+            setNovedades(response.data);
+            setLoading(false);
+        };
+
+        cargarNovedades();
+    },[]);
+
+
     return (
         <section className="holder">
-            <h2>Novedades</h2>
-            <h3>titulo</h3>
-            <h4>subtitulo</h4>
-            <p>cuerpo</p>
+            <h1>Listado de Ofertas</h1>
+            {loading ?(
+                <p>Cargando...</p>
+            ):(
+                novedades.map(item=> <OfertaItem 
+                    id_oferta={item.id_oferta} descrip_prod={item.descrip_prod}
+                     precio_oferta={item.precio_oferta} cant_min={item.cant_min} imagen={item.imagen} />)
+
+            )}
         </section>
     );
 }
 
-export default NovedadesPage;
+export default Nav;

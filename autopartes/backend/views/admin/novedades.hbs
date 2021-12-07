@@ -43,6 +43,7 @@
                         <th scope="col">Producto</th>
                         <th scope="col">Precio Unitario</th>
                         <th scope="col">Cant.Minima</th>
+                        <th scope="col">Imagen</th>
                         <th scope="col" class="text-center">Acciones</th>
                     </tr>
                 </thead>
@@ -52,8 +53,9 @@
                     <tr>
                         <th scope="row">{{id_oferta}}</th>
                         <td>{{descrip_prod}}</td>
-                        <td>{{precio_oferta}}</td>
-                        <td>{{cant_min}}</td>
+                        <td>$ {{precio_oferta}}</td>
+                        <td>{{cant_min}} u.</td>
+                         <td>{{{imagen}}}</td>
                         <td class="text-center">
                             <a href="/admin/novedades/modificar/{{id_oferta}}" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
                             <a href="/admin/novedades/eliminar/{{id_oferta}}" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
